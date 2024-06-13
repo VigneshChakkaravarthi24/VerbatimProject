@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import './styles/App.css';
 import { PageLayout } from './components/PageLayout';
@@ -6,6 +7,8 @@ import Button from 'react-bootstrap/Button';
 import { loginRequest } from './authConfig';
 import { callMsGraph } from './graph';
 import { ProfileData } from './components/ProfileData';
+import { Entry } from './pages/entry/Entry.page';
+import './pages/entry/entry.style.css'
 
 
 /**
@@ -62,6 +65,7 @@ export default function App() {
     return (
         <PageLayout>
             <MainContent />
+            <Entry/>
         </PageLayout>
     );
 }
