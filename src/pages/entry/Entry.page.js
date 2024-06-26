@@ -10,7 +10,7 @@ export const Entry = () => {
         const {name, value} =e.target
         switch(name){
             case 'email':
-                setEmail()
+                setEmail() // QUESTION: Is the setEmail() function a function inside of Login.comp or is it a function provided by the library for useState
                 break
             case 'password':
                 setPassword()
@@ -38,7 +38,7 @@ export const Entry = () => {
                 <LoginForm 
                 handleOnChange={handleOnChange}
                 handleOnSubmit={handleOnSubmit}
-                email={email}
+                email={email} // QUESTION: Does {email} point to value in login component?
                 pass={password}
                 />
             </h1>

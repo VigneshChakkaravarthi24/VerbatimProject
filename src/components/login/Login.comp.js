@@ -1,15 +1,27 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { useMsal } from "@azure/msal-react";
+import { loginRequest } from '../../authConfig';
 import {Container, Row, Col, Form, Button} from 'react-bootstrap';
 
 export const LoginForm = ({ handleOnChange, handleOnSubmit, email, pass }) => {
+
+    const HandleOnLogin = () => {
+
+        const { instance } = useMsal();
+
+                instance.loginRedirect(loginRequest).catch(e => {
+                    console.log(e);
+                });
+    };
+
     return (
         <Container>
             <Row>
                 <Col>
                 <h1 className="text-center">Welcome</h1>
                 <hr/>
-                <Form autoComplete="off" onSubmit={handleOnSubmit}>
+                <Form autoComplete="off">
                     <Form.Group>
                         <Form.Label>Email Address</Form.Label>
                         <Form.Control 
@@ -32,7 +44,7 @@ export const LoginForm = ({ handleOnChange, handleOnSubmit, email, pass }) => {
                         required
                         />
                     </Form.Group>
-                    <Button type="submit">Login</Button>
+                    <Button type="submit" onClick={HandleOnLogin}>Login</Button>
                 </Form>
                 <hr />
                 </Col>

@@ -9,6 +9,10 @@ import { callMsGraph } from './graph';
 import { ProfileData } from './components/ProfileData';
 import { Entry } from './pages/entry/Entry.page';
 import './pages/entry/entry.style.css'
+import './pages/instruction/instruction.style.css'
+import './pages/consent/consent.style.css'
+import { Instruction } from './pages/instruction/Instruction.page'
+import { Consent } from './pages/consent/Consent.page';
 
 
 /**
@@ -63,9 +67,10 @@ const MainContent = () => {
 
 export default function App() {
     return (
-        <PageLayout>
-            <MainContent />
-            <Entry/>
-        </PageLayout>
+  
+        //<Entry/>
+        //<Instruction/>
+        <Consent/>
+
     );
 }

@@ -1,0 +1,17 @@
+.consent-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.consent-box{
+    resize: none;
+}
+
+.agree-button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}

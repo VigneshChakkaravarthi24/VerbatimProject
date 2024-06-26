@@ -1,0 +1,17 @@
+.instruction-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.instruction-box{
+    resize: none;
+}
+
+.next-button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
