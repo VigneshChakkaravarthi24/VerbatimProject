@@ -11,13 +11,14 @@ export const Consent = () => {
         <div 
             className="consent-div bg-info">
             <AgreeButton/>
-            <label for="consent-box">Consent Form</label>
+            <label for="consent-box" className="consent-label">Consent Form</label>
             <textarea 
                 className="consent-box"
                 rows="25"
                 cols="100"
                 readOnly
-            >Instructions that will be shown to the user will be presented in this textarea box.</textarea>
+                
+            >Consent form that will be shown to the user will be presented in this textarea box.</textarea>
         </div>
     );
 

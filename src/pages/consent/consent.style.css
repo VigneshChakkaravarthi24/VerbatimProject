@@ -7,11 +7,37 @@
 }
 
 .consent-box{
+    border-radius: 10px;
     resize: none;
+}
+
+/* QUESTION: How to put space between label and consent box? */
+.consent-label{
+    padding-left: 273px;
+    padding-right: 273px;
+    border-radius: 10px;
+
+    font-size: xx-large;
+    font-weight: bold;
+
+    background-color: white;  
 }
 
 .agree-button{
     position: fixed;
     top: 10px;
     right: 10px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+.agree-button:hover {
+    transition: 0.4s;
+    background-color:aquamarine;
 }

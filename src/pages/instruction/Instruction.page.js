@@ -9,7 +9,7 @@ export const Instruction = () => {
         <div 
             className="instruction-div bg-info">
             <NextButton/>
-            <label for="intruction-box">Instructions</label>
+            <label for="intruction-box" className="instruction-label">Instructions</label>
             <textarea 
                 className="instruction-box"
                 rows="25"
